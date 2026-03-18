@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Analyce Marques de Freitas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', 'Calibri', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .cv-header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .cv-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .cv-title {
+            font-size: 16px;
+            color: #666;
+            margin-top: 8px;
+            font-weight: 400;
+        }
+        
+        .cv-contact {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .cv-contact span {
+            margin-right: 20px;
+        }
+        
+        .cv-section {
+            margin-bottom: 30px;
+        }
+        
+        .cv-section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .cv-item {
+            margin-bottom: 18px;
+        }
+        
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .cv-item-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 15px;
+        }
+        
+        .cv-item-date {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+        }
+        
+        .cv-item-subtitle {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .cv-item-description {
+            font-size: 14px;
+            color: #666;
+            text-align: justify;
+        }
+        
+        .cv-skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .cv-skill {
+            background: #f0f0f0;
+            padding: 6px 14px;
+            font-size: 13px;
+            border-radius: 3px;
+            color: #444;
+        }
+        
+        .cv-languages {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .cv-language {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .cv-language-level {
+            color: #888;
+            font-size: 13px;
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 25px;
+            }
+            .cv-item-header {
+                flex-direction: column;
+            }
+            .cv-contact span {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Cabeçalho -->
+        <header class="cv-header">
+            <h1 class="cv-name">Analyce Marques de Freitas</h1>
+            <p class="cv-title">Estagiaria na Área de Informática</p>
+            <div class="cv-contact">
+                <span>📧 marquesanalyce@gmail.com</span>
+                <span>📱(85) 99185-4595</span>
+                <span>📍Maracanau, Ceará</span>
+                <a href="https://www.linkedin.com/in/analyce-marques/" target="_blank">🔗 linkedin.com/in/analyce-marques</a>
+            </div>
+        </header>
+        
+        <!-- Resumo Profissional -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Resumo Profissional</h2>
+            <p class="cv-item-description">
+                Estudante do 3º ano do Ensino Médio com formação técnica em Informática pelo IFCE do Maracanau. Busco oportunidade de estágio na área de tecnologia da informação ou áreas correlatas. Durante minha formação, desenvolvi habilidades práticas em manutenção de computadores, diagnóstico de problemas, formatação e instalação de sistemas e programas. Sou proativa, organizada, comunicativa e trabalho bem em equipe, sempre disposta a aprender e contribuir com o ambiente de trabalho.
+            </p>
+        </section>
+        
+        <!-- Experiência Profissional -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Experiência Profissional</h2>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Estagiário de TI</span>
+                    <span class="cv-item-date">5 meses</span>
+                </div>
+                <p class="cv-item-subtitle">IFCE Campus Maracanau</p>
+                <p class="cv-item-description">
+                    Estágio obrigatório realizado no próprio campus durante o curso técnico. Atuei com manutenção preventiva e corretiva de computadores, diagnóstico de falhas de hardware e software, formatação e reinstalação de sistemas operacionais, instalação e configuração de programas e aplicativos, suporte técnico aos usuários do campus, e participação em projetos de infraestrutura de rede. Experiência que desenvolveu minha capacidade de resolver problemas técnicos e atender demandas de forma eficiente.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Formação Acadêmica -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Formação Acadêmica</h2>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Técnico em Informática</span>
+                    <span class="cv-item-date">Conclusão: 2025</span>
+                </div>
+                <p class="cv-item-subtitle">IFCE - Instituto Federal do Ceará Campus Maracanau</p>
+                <p class="cv-item-description">
+                    Curso técnico concomitante ao ensino médio com duração de 2 anos. Formação abrangente em programação, banco de dados, redes de computadores, manutenção de hardware e software, sistemas operacionais e desenvolvimento web. O curso incluiu disciplinas práticas e teóricas que proporcionaram base sólida para atuar na área de tecnologia da informação.
+                </p>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Ensino Médio</span>
+                    <span class="cv-item-date">3º Ano - Em andamento</span>
+                </div>
+                <p class="cv-item-description">
+                    Estudante do 3º ano do ensino médio, com previsão de conclusão em 2026. Idade: 17 anos.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Habilidades Técnicas -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Habilidades Técnicas</h2>
+            <div class="cv-skills-list">
+                <span class="cv-skill">Manutenção de Computadores</span>
+                <span class="cv-skill">Diagnóstico de Problemas</span>
+                <span class="cv-skill">Formatação de Sistemas</span>
+                <span class="cv-skill">Instalação de Programas</span>
+                <span class="cv-skill">Suporte Técnico</span>
+                <span class="cv-skill">Redes de Computadores</span>
+                <span class="cv-skill">Sistemas Operacionais</span>
+                <span class="cv-skill">Pacote Office</span>
+                <span class="cv-skill">Instalação de Hardware</span>
+                <span class="cv-skill">Configuração de Periféricos</span>
+            </div>
+        </section>
+        
+        <!-- Habilidades Pessoais -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Habilidades Pessoais</h2>
+            <div class="cv-skills-list">
+                <span class="cv-skill">Atendimento ao usuário com foco em solução</span>
+                <span class="cv-skill">Raciocínio lógico e análise de problemas</span>
+                <span class="cv-skill">Comunicativa</span>
+                <span class="cv-skill">Colaboração em equipe</span>
+                <span class="cv-skill">Organização e cumprimento de prazos</span>
+                <!--  <span class="cv-skill">Aprendizagem Rápida</span>
+                <span class="cv-skill">Atenção aos Detalhes</span>
+                <span class="cv-skill">Comprometida</span>  -->
+            </div>
+        </section>
+        
+        <!-- Idiomas -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Idiomas</h2>
+            <div class="cv-languages">
+                <div class="cv-language">
+                    <strong>Português</strong> <span class="cv-language-level">– Nativo</span>
+                </div>
+                <div class="cv-language">
+                    <strong>Inglês — A2</strong> <span class="cv-language-level">– Básico/Leitura técnica</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Informações Adicionais -->
+        <section class="cv-section">
+            <h2 class="cv-section-title">Informações Adicionais</h2>
+            <div class="cv-item">
+                <p class="cv-item-description">
+                    <strong>Disponibilidade:</strong> Tarde (12h às 19h) - Flexível para ajustes conforme necessidade.<br><br>
+                    <strong>Objetivo:</strong> Busco ingressar no mercado de trabalho através de um estágio que me permita aplicar os conhecimentos adquiridos durante o curso técnico, desenvolver novas habilidades profissionais e contribuir para o crescimento da organização, enquanto construo minha carreira na área de tecnologia da informação.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Analyce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+
+        <header class="in-header">
+            <h1 class="Hnome">Analyce Marques de Freitas</h1>
+            <p>Estagiaria na Área de Informática</p>
+            <div class="sec-cont">
+                <span>&#128232 marquesanalyce@gmail.com</span>
+                <span>&#128241 (85) 99185-4595</span>
+                <span>&#128205Maracanau, Ceará</span>
+                <a href="https://www.linkedin.com/in/analyce-marques/" target="_blank"> <!-- target="_black" faz com que seja aberta uma nova pág--> &#128206 linkedin.com/in/analyce-marques</a>
+            </div>
+        </header>
+
+        <!--Resumo Profissional-->
+        <section class="section">
+            <h2 class="sec-title">Resumo Profissional</h2>
+            <p class="rprof-descricao">
+                Estudante do 3º ano do Ensino Médio com formação técnica em Informática pelo IFCE do Maracanau. Busco oportunidade de estágio na área de tecnologia da informação ou áreas correlatas. Durante minha formação, desenvolvi habilidades práticas em manutenção de computadores, diagnóstico de problemas, formatação e instalação de sistemas e programas. Sou proativa, organizada, comunicativa e trabalho bem em equipe, sempre disposta a aprender e contribuir com o ambiente de trabalho.
+            </p>
+        </section>
+
+        <!--Experiência Profissional-->
+        <section class="section">
+            <h2 class="sec-title">Experiência Profissional</h2>
+
+            <div class="sec-item">
+                <div class="sec-item-header">
+                    <span class="sec-item-title">Estagiário de TI</span>
+                    <span class="sec-item-data">5 meses</span>
+                </div>
+
+                <p class="sec-item-subtitulo">IFCE Campus Maracanau</p>
+                <p class="sec-item-descricao">Estágio obrigatório realizado no próprio campus durante o curso técnico. Atuei com manutenção preventiva e corretiva de computadores, diagnóstico de falhas de hardware e software, formatação e reinstalação de sistemas operacionais, instalação e configuração de programas e aplicativos, suporte técnico aos usuários do campus, e participação em projetos de infraestrutura de rede. Experiência que desenvolveu minha capacidade de resolver problemas técnicos e atender demandas de forma eficiente.</p>
+            </div>
+        </section>
+
+        <!--Formação Acadêmica-->
+        <section class="section">
+            <h2 class="sec-title">Formação Acadêmica</h2>
+
+            <div class="sec-item">
+                <div class="sec-item-header">
+                    <span class="sec-item-title">Técnico em Informática</span>
+                    <span class="sec-item-data">Conclusão: março de 2026</span>
+                </div>
+                <p class="sec-item-subtitulo">IFCE - Instituto Federal do Ceará Campus Maracanau</p>
+                <p class="sec-item-descricao">
+                    Curso técnico concomitante ao ensino médio com duração de 2 anos. Formação abrangente em programação, banco de dados, redes de computadores, manutenção de hardware e software, sistemas operacionais e desenvolvimento web. O curso incluiu disciplinas práticas e teóricas que proporcionaram base sólida para atuar na área de tecnologia da informação.
+                </p>
+            </div>
+
+            <div class="sec-item">
+                <div class="sec-item-header">
+                    <span class="sec-item-title">Ensiono Médio</span>
+                    <span class="sec-item-data">3º Ano - Em andamento</span>
+                </div>
+                <p class="sec-item-descricao">
+                    Estudante do 3º ano do ensino médio, com previsão de conclusão em 2026. Idade: 17 anos.
+                </p>
+            </div>
+        </section>
+
+        <!--Habilidades Técnicas-->
+        <section class="section">
+            <h2 class="sec-title">Habilidades Técnicas</h2>
+            <div class="sec-habil-list">
+                <span class="sec-habil">Manutenção de Computadores</span>
+                <span class="sec-habil">Diagnóstico de Problemas</span>
+                <span class="sec-habil">Instalação de Programas</span>
+                <span class="sec-habil">Suporte Técnico</span>
+                <span class="sec-habil">Sistemas Operacionais</span>
+                <span class="sec-habil">Pacote Office</span>
+                <span class="sec-habil">Instalação de Hardware</span>
+                <span class="sec-habil">Configura;cão de Software</span>
+                <span class="sec-habil">Configuração de Periféricos</span>
+            </div>
+        </section>
+
+        <!--Habilidades Pessoais-->
+        <section class="section">
+            <h2 class="sec-title">Habilidades Pessoais</h2>
+            <div class="sec-habil-list">
+                <span class="sec-habil">>Atendimento ao usuário com foco em solução</span>
+                <span class="sec-habil">Raciocínio lógico e análise de problemas</span>
+                <span class="sec-habil">Comunicativa</span>
+                <span class="sec-habil">Colaboração em equipe</span>
+                <span class="sec-habil">Organização e cumprimento de prazos</span>
+                <span class="sec-habil">Comprometida</span>
+            </div>
+        </section>
+
+        <!--Idiomas-->
+        <section class="section">
+            <h2 class="sec-title">Idiomas</h2>
+            <div class="sec-linguas">
+                <div class="sec-lingua">
+                    <strong>Português</strong> <span class="sec-lingua-nivel">-Nativo</span>
+                </div>
+                
+                <div class="sec-lingua">
+                    <strong>Inglês - A2</strong> <span class="sec-lingua-nivel">-Básico/Leitura técnica</span>
+                </div>
+            </div>
+        </section>
+        
+        <!--Informações Adicionais-->
+        <section class="section">
+            <h2 class="sec-title">Informações Adicionais</h2>
+            <div class="sec-item">
+                <p class="sec-item-descricao">
+                    <strong>Disponibilidade:</strong> Tarde (12h às 19h) - Flexível para ajustes conforme necessidade. <br><br>
+                    <strong>Objetivo:</strong> Busco ingressar no mercado de trabalho através de um estágio que me permita aplicar os conhecimentos adquiridos durante o curso técnico, desenvolver novas habilidades profissionais e contribuir para o crescimento da organização, enquanto construo minha carreira na área de tecnologia da informação.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

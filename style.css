@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+boby {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 2;
+    padding: 40px 20px;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 2px 20px #000;
+}
+
+.in-header {
+    border-bottom: 2px solid #040404; /* a linha que divide as secoes */
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.Hnome {
+    font-size: 16px;
+    color: #1e1d1d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sec-title {
+    font-size: 16px;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.sec-cont {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #575757;
+}
+
+.sec-cont span {
+    margin-right: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.sec-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sec-item {
+    margin-bottom: 18px;
+}
+
+.sec-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.sec-item-title {
+    font-weight: 600;
+    color: #323131;
+    font-size: 15px;
+}
+
+.sec-item-data {
+    font-size: 13px;
+    color: #777777;
+    font-style: italic;
+}
+
+.sec-item-subtitulo {
+    font-size: 14px;
+    color: #575757;
+    margin-bottom: 5px;
+}
+
+.sec-item-descicao {
+    font-size: 14px;
+    color: #585858;
+    text-align: justify;
+}
+
+.sec-habil-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sec-habil {
+    background: #e3e1e1;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 3px;
+    color: #333232;
+}
+
+.sec-linguas {
+    display: flex;
+    gap: 30px;
+}
+
+.sec-lingua {
+    font-size: 14px;
+    color: #5d5c5c;
+}
+
+.sec-lingua-nivel {
+    color: #6f6d6d;
+    font-size: 13px;
+}
+ 
+@media print {
+    body {
+        background: #fff;
+        padding: 0;
+    }
+    #container {
+        box-shadow: none;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #container {
+        padding: 25px;
+    }
+    .sec-item-header {
+        flex-direction: column;
+    }
+    .sec-cont span {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+/*
+👉 Esse bloco é para telas pequenas (celular)
+Diminui o espaço interno → melhor para telas menores
+Se antes os itens estavam lado a lado (row), agora ficam um embaixo do outro
+Cada informação de contato fica em uma linha
+Adiciona um pequeno espaço entre elas
+
+🖨️ @media print → ajusta o layout para impressão
+
+📱 @media (max-width: 600px) → ajusta para celular   */ 
